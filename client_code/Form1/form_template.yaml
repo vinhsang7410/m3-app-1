@@ -7,7 +7,51 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: txtnumber
+    properties: {visible: true, text: 12 3 44 56 79 2 121}
+    type: TextBox
+    layout_properties: {grid_position: 'CHHJBC,DYOQHC'}
+  - name: Quick_sort
+    properties: {visible: true, text: 'Quick sort
+
+        '}
+    type: Label
+    layout_properties: {grid_position: 'URVIEH,NSXBMR XJNSOO,RSKQMP'}
+  - name: txtNumbers_QS
+    properties: {visible: true}
+    type: TextBox
+    layout_properties: {grid_position: 'URVIEH,NSXBMR LOSQWE,AQPOKZ'}
+  - name: Merge_Sort
+    properties: {visible: true, text: Merge Sort}
+    type: Label
+    layout_properties: {grid_position: 'URVIEH,FXXTYH'}
+  - name: txtNumbers_MS
+    properties: {visible: true}
+    type: TextBox
+    layout_properties: {grid_position: 'URVIEH,FXXTYH'}
+  - name: Buble_Sort
+    properties: {visible: true, text: Buble Sort}
+    type: Label
+    layout_properties: {grid_position: 'USDIEP,ZOMZSB EYHXRH,WBFHTP'}
+  - name: txtNumbers_BS
+    properties: {visible: true}
+    type: TextBox
+    layout_properties: {grid_position: 'USDIEP,ZOMZSB NGRFGC,QDDQFG'}
+  - name: Selection_Sort
+    properties: {visible: true, text: Selection Sort}
+    type: Label
+    layout_properties: {grid_position: 'USDIEP,FBFMZP'}
+  - name: txtNumbers_SS
+    properties: {visible: true}
+    type: TextBox
+    layout_properties: {grid_position: 'USDIEP,FBFMZP SWSHQT,YCRTAM'}
+  - name: btnSort
+    properties: {text: Sort, enabled: true, visible: true, align: center, spacing_above: small,
+      spacing_below: small, icon: ''}
+    type: Button
+    layout_properties: {grid_position: 'XIPKRB,NIIJOI'}
+    event_bindings: {click: btnSort_click, show: btnSort_show}
 - type: FlowPanel
   properties: {}
   name: navbar_links

@@ -1,17 +1,14 @@
 import anvil.server
+# This is a module.
+# You can define variables and functions here, and use them from any form. For example, in a top-level form:
+#
+#    from . import Module1
+#
+#    Module1.say_hello()
+#
 
-# This is a server module. It runs on the Anvil server,
-# rather than in the user's browser.
-#
-# To allow anvil.server.call() to call functions here, we mark
-# them with @anvil.server.callable.
-# Here is an example - you can replace it with your own:
-#
-# @anvil.server.callable
-# def say_hello(name):
-#   print("Hello, " + name + "!")
-#   return 42
-#
+def say_hello():
+  print("Hello, world")
 def quicksort_string(input_string):
     # Chuyển chuỗi đầu vào thành một mảng các số nguyên
     arr = list(map(int, input_string.split()))
@@ -33,12 +30,5 @@ def quicksort_string(input_string):
     sorted_string = ' '.join(map(str, sorted_array))
     return sorted_string
 
-def convert_string_to_array(input_string):
-    # Tách các phần tử trong chuỗi theo dấu cách và chuyển thành list
-    string_list = input_string.split()
-    
-    # Chuyển đổi các phần tử trong list thành số nguyên
-    integer_list = [int(x) for x in string_list]
-    
-    return integer_list
-
+def ptsum(a, b):
+  return a+b

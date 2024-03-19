@@ -1,7 +1,8 @@
 unique_ids:
   forms:
     Form1: 6V4OWBDTPHMR4Z25XIHRW7NJHE4VQO64
-  modules: {}
+  modules:
+    Module1: '1710836130610598479500221.3496'
   server_modules:
     ServerModule1: '1710834242876701300347647.7693'
   assets:
